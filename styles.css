@@ -27,7 +27,7 @@ body.pink {
   --primary-color-dark: #A61E4D;
 }
 
-body.pinkark {
+body.pink.dark {
   --bg-color: #1F000B;
   --text-color: #FFF0F6;
 }

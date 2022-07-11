@@ -17,27 +17,21 @@
   <script>
     var cont = 0;
     function TrocaTema() {
-
       let corpo = document.getElementById('tema');
-
       if (corpo.className == "dark") {
         corpo.classList.remove("dark");
         corpo.classList.add('pink')
       }
       else if (corpo.className == "pink") {
-        corpo.classList.remove("pink");
+        corpo.classList.add('dark')
       }
       else if (corpo.className == "pink dark") {
-        corpo.classList.remove("pink dark");
-
+        corpo.classList.remove("pink")
+        corpo.classList.remove("dark");
       }
       else {
         corpo.classList.add("dark");
       }
-
-
-
-
     }
   </script>
 </head>
