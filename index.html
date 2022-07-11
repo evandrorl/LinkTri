@@ -13,12 +13,39 @@
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Open+Sans:wght@300;700&family=Roboto+Mono&family=Roboto:wght@500;700&display=swap"
     rel="stylesheet">
+
+  <script>
+    var cont = 0;
+    function TrocaTema() {
+
+      let corpo = document.getElementById('tema');
+
+      if (corpo.className == "dark") {
+        corpo.classList.remove("dark");
+        corpo.classList.add('pink')
+      }
+      else if (corpo.className == "pink") {
+        corpo.classList.remove("pink");
+      }
+      else if (corpo.className == "pink dark") {
+        corpo.classList.remove("pink dark");
+
+      }
+      else {
+        corpo.classList.add("dark");
+      }
+
+
+
+
+    }
+  </script>
 </head>
 
-<body class="dark">
+<body ID="tema" class="dark">
   <div class="container">
     <img src="https://avatars.githubusercontent.com/u/68791659?s=400&u=cdf425627bd77d5d876c1e1be91c689d54a8bbab&v=4"
-      alt="Foto do Evandro de óculos escuros" class="avatar">
+      alt="Foto do Evandro de óculos escuros" class="avatar" onclick="TrocaTema();">
     <h1> Evandro Lopes</h1>
     <p class="username">@evandrolopesoficial</p>
     <ul>
